@@ -1,0 +1,22 @@
+{
+  "name": "insomnia-plugin-stripe-token",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "insomnia": {
+    "name": "stripe-token",
+    "displayName": "Stripe Token",
+    "description": "The plugin that generates stripe test card/bank account tokens",
+    "images": {
+      "icon": "icon.svg",
+      "cover": "cover.svg"
+    },
+    "publisher": {
+      "name": "Sviatoslav Skotar"
+    },
+    "unlisted": false
+  },
+  "dependencies": {
+    "stripe": "8.202.0"
+  }
+}
