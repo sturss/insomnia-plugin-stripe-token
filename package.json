@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/sturss/insomnia-plugin-stripe-token.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "insomnia",
     "stripe",
