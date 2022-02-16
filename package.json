@@ -12,6 +12,17 @@
     },
     "unlisted": false
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sturss/insomnia-plugin-stripe-token.git"
+  },
+  "keywords": [
+    "insomnia",
+    "stripe",
+    "plugin",
+    "token"
+  ],
+  "author": "Sviatoslav Skotar <sturss22@gmail.com>",
   "dependencies": {
     "stripe": "8.202.0"
   }
