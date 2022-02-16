@@ -23,7 +23,17 @@
     "token"
   ],
   "author": "Sviatoslav Skotar <sturss22@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "stripe": "8.202.0"
+  },
+  "description": "The plugin should help to easily generate Stripe Payment Card/Bank Account tokens",
+  "bugs": {
+    "url": "https://github.com/sturss/insomnia-plugin-stripe-token/issues"
+  },
+  "homepage": "https://github.com/sturss/insomnia-plugin-stripe-token#readme",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
