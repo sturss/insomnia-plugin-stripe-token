@@ -7,10 +7,6 @@
     "name": "stripe-token",
     "displayName": "Stripe Token",
     "description": "The plugin that generates stripe test card/bank account tokens",
-    "images": {
-      "icon": "icon.svg",
-      "cover": "cover.svg"
-    },
     "publisher": {
       "name": "Sviatoslav Skotar"
     },

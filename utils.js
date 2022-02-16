@@ -7,7 +7,7 @@ function validateStripeTestApiKey(key) {
 }
 
 
-function getTestCardExpirationDate(expired = false) {
+function getTestCardExpirationDate() {
     let expirationDate = new Date()
     expirationDate.setFullYear(expirationDate.getFullYear() + 10)
     return expirationDate
@@ -15,5 +15,5 @@ function getTestCardExpirationDate(expired = false) {
 
 module.exports = {
     getTestCardExpirationDate,
-    validateStripeTestApiKey
+    validateStripeTestApiKey,
 }

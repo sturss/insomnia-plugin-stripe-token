@@ -1,4 +1,7 @@
 const DEFAULT_CARD = 'us_visa'
+const DEFAULT_CVC = '333'
+const DEFAULT_BANK_ACCOUNT_NUMBER = 'success'
+
 const STRIPE_COUNTRY_VALID_CARD_NUMBER = {
     us_visa: '4242424242424242',
     us_visa_debit: '4000056655665556',
@@ -58,6 +61,24 @@ const STRIPE_COUNTRY_VALID_CARD_NUMBER = {
     th_visa: '4000007640000003',
     th_visa_debit: '4000057640000008',
 }
+
+const CARD_SPECIFIC_CVC = {
+    us_american_express: '4444'
+}
+
+const BANK_ACCOUNT_ROUTING_NUMBER = '110000000'
+const BANK_ACCOUNT_HOLDER = 'Jenny Rosen'
+const DEFAULT_BANK_ACCOUNT_HOLDER_TYPE = 'individual'
+
+const BANK_ACCOUNT_NUMBERS = {
+    success: '000123456789',
+    fail_on_use: '000111111116',
+    closed: '000111111113',
+    insufficient_funds: '000222222227',
+    debit_not_authorized: '000333333335',
+    invalid_currency: '000444444440',
+}
+
 const TEMPLATES_INPUTS_DEFINITIONS = {
     STRIPE_API_KEY: {
         displayName: 'Stripe API Key',
@@ -305,10 +326,63 @@ const TEMPLATES_INPUTS_DEFINITIONS = {
             },
         ]
     },
+    STRIPE_BANK_ACCOUNT_NUMBER: {
+        displayName: 'Bank Account',
+        type: 'enum',
+        defaultValue: 'success',
+        options: [
+            {
+                value: 'success',
+                displayName: 'Success',
+            },
+            {
+                value: 'fail_on_use',
+                displayName: 'Failure Upon Use',
+            },
+            {
+                value: 'closed',
+                displayName: 'Closed',
+            },
+            {
+                value: 'insufficient_funds',
+                displayName: 'Insufficient Funds',
+            },
+            {
+                value: 'debit_not_authorized',
+                displayName: 'Debit not Authorized',
+            },
+            {
+                value: 'invalid_currency',
+                displayName: 'Invalid Currency',
+            },
+        ]
+    },
+    STRIPE_BANK_ACCOUNT_HOLDER_TYPE: {
+        displayName: 'Holder Type',
+        type: 'enum',
+        defaultValue: 'individual',
+        options: [
+            {
+                displayName: 'Individual',
+                value: 'individual',
+            },
+            {
+                displayName: 'Company',
+                value: 'company',
+            },
+        ]
+    }
 }
 
 module.exports = {
     DEFAULT_CARD,
+    DEFAULT_CVC,
+    DEFAULT_BANK_ACCOUNT_NUMBER,
+    DEFAULT_BANK_ACCOUNT_HOLDER_TYPE,
+    CARD_SPECIFIC_CVC,
     TEMPLATES_INPUTS_DEFINITIONS,
     STRIPE_COUNTRY_VALID_CARD_NUMBER,
+    BANK_ACCOUNT_NUMBERS,
+    BANK_ACCOUNT_ROUTING_NUMBER,
+    BANK_ACCOUNT_HOLDER,
 }
