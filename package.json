@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-stripe-token",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "app.js",
   "insomnia": {
     "name": "stripe-token",
@@ -35,9 +35,9 @@
   },
   "homepage": "https://github.com/sturss/insomnia-plugin-stripe-token#readme",
   "devDependencies": {
-    "mocha": "^9.2.0"
+    "jest": "^27.5.1"
   },
   "scripts": {
-    "test": "mocha tests"
+    "test": "jest tests"
   }
 }

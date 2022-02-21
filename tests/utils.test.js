@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {validateStripeTestApiKey} = require('../utils');
+const {validateStripeTestApiKey, getTestCardExpirationDate} = require('../utils');
 
 describe('validateStripeTestApiKey', function () {
     it('should throw error as stripe key is not provided', function () {
@@ -22,5 +22,14 @@ describe('validateStripeTestApiKey', function () {
         assert.doesNotThrow(() => {
             validateStripeTestApiKey('sk_test_123455')
         })
+    })
+});
+
+
+describe('getTestCardExpirationDate', function () {
+    it('The date 10 years from now in the future', function () {
+        const expirationDate = getTestCardExpirationDate()
+        const expectedDate = (new Date()).getFullYear() + 10
+        assert.equal(expirationDate.getFullYear(), expectedDate)
     })
 });
