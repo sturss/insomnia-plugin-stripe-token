@@ -1,7 +1,7 @@
 {
   "name": "insomnia-plugin-stripe-token",
   "version": "1.0.2",
-  "main": "app.js",
+  "main": "plugin/app.js",
   "insomnia": {
     "name": "stripe-token",
     "displayName": "Stripe Token",
@@ -35,9 +35,12 @@
   },
   "homepage": "https://github.com/sturss/insomnia-plugin-stripe-token#readme",
   "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
     "jest": "^27.5.1"
   },
   "scripts": {
-    "test": "jest tests"
+    "test": "jest tests",
+    "lint": "eslint plugin --fix"
   }
 }

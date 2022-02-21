@@ -1,7 +1,7 @@
 const assert = require('assert');
-const stripePaymentCardTemplate = require('../template-tags/stripe-payment-card-token');
-const stripeBankAccountTemplate = require('../template-tags/stripe-bank-account-token');
-const {DEFAULT_CARD} = require('../constants');
+const stripePaymentCardTemplate = require('../plugin/template-tags/stripe-payment-card-token');
+const stripeBankAccountTemplate = require('../plugin/template-tags/stripe-bank-account-token');
+const {DEFAULT_CARD} = require('../plugin/constants');
 
 const context = {
     context: {}

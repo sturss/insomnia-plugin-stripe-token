@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {validateStripeTestApiKey, getTestCardExpirationDate} = require('../utils');
+const {validateStripeTestApiKey, getTestCardExpirationDate} = require('../plugin/utils');
 
 describe('validateStripeTestApiKey', function () {
     it('should throw error as stripe key is not provided', function () {
