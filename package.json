@@ -1,6 +1,6 @@
 {
   "name": "insomnia-plugin-stripe-token",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "plugin/app.js",
   "insomnia": {
     "name": "stripe-token",
